@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html,body{
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+}
+/*Auxiliares*/
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+/*Fim auxiliares*/
+/*Header*/
+header{
+    padding: 15px 0;
+    border-bottom: 2px solid rgb(212, 212, 212);
+    background-color: white;
+}
+header .container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.header-content-single-left,
+.header-content-single-center,
+.header-content-single-right{
+    width: 33.3%;
+}
+.header-content-single-left{
+    display: block;
+}
+
+.header-content-single-left img{
+    max-width: 120px;
+}
+
+.header-content-single-center .search{
+    position: relative;
+}
+.search input{
+    width: 60%;
+    height: 35px;
+    text-align: center;
+    background-color: rgb(232, 232, 232);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 3px;
+}
+.search input:focus{
+    outline: none;
+}
+.search i{
+    position: absolute;
+    left: 150px;
+    top: 10px;
+    color: rgb(196, 196, 196);
+}
+.header-content-single-right i{
+    font-size: 25px;
+    padding: 0 2%;
+    position: relative;
+    top: -10px;
+    color: black;
+}
+.header-content-single-right img{
+    max-width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/*Fim header*/
+/*Profile description*/
+.profile-description .container{
+    max-width: 1100px;
+}
+.img-perfil-wraper{
+    float: left;
+    width: 50%;
+    padding: 0 40px;
+}
+.img-perfil{
+    background-image: url('../images/perfil.jpg');
+    background-size: 100% 100%;
+    width: 45%;
+    padding-top: 45%;
+    border-radius: 50%;
+    border: 3px solid rgb(212, 212, 212);
+    margin: 20px auto;
+}
+.profile-text{
+    float: left;
+    width: 45%;
+    text-align: left;
+}
+.nome-perfil{
+    margin: 20px auto;
+}
+.nome-perfil span{
+    font-size: 23px;
+}
+.nome-perfil a.editar{
+    font-size: 13px;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: rgb(232, 232, 232);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 3px;
+}
+.nome-perfil a.editar:hover{
+    background-color: rgb(212, 212, 212);
+    border: 1px solid rgb(200, 200, 200);
+}
+.nome-perfil a{
+    text-decoration: none;
+    color: black;
+}
+.sobre-perfil{
+    padding: 20px 0;
+}
+.sobre-perfil-single{
+    width: 33.3%;
+    float: left;
+}
+.sobre-perfil-single h2{
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.biografia h2{
+    display: block;
+    font-size: 16px;
+    margin: 20px 0 8px 0;
+}
+.carrossel{
+    padding: 40px 0;
+    margin-top: 60px;
+    text-align: center;
+}
+.img-carrossel{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(212, 212, 212);
+    border: 3px solid rgb(190, 190, 190);
+    display: inline-block;
+    margin: 0 2%;
+    position: relative;
+    cursor: pointer;
+}
+.img-carrossel i{
+    color: grey;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.feed{
+    text-align: center;
+}
+.line-feed{
+    border-top: 1px solid rgb(212, 212, 212);
+    margin: 15px 0s;
+    max-width: 960px;
+    margin: 15px auto;
+}
+.feed-name p{
+    display: inline-block;
+    padding: 10px 2%;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.feed .container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+}
+.foto-feed-single{
+    width: 33%;
+    background-color: teal;
+    padding-top: 30%;
+    border: 7px solid rgb(245, 245, 245);
+}
+/*Fim Profile description*/
+@media screen and (max-width:580px){
+    .header-content-single-center{
+        display: none;
+    }
+    .header-content-single-left,
+    .header-content-single-right{
+        width: 50%;
+    }
+}
